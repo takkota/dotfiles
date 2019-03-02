@@ -1,0 +1,6 @@
+- name: Mac Setup
+  hosts: localhost
+  connection: local
+ 
+  tasks:
+    - ping:

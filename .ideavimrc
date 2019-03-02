@@ -1,0 +1,53 @@
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
+set clipboard=unnamed,autoselect
+
+set ignorecase
+set smartcase
+
+"" tabidou
+nnoremap <C-Tab> <C-w>w
+nnoremap <C-n> gt
+nnoremap <C-p> gT
+
+:set number
+
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+
+""color-shecheme
+syntax on
+colorscheme molokai
+set t_Co=256
+
+
+noremap <S-h>   ^
+noremap <S-j>   }
+noremap <S-k>   {
+noremap <S-l>   $
+noremap m  %
+noremap j gj
+noremap k gk
+noremap <Down> gj
+noremap <Up> gk
+
+
+"" clipboardにコピー
+command Pbcopy :let @*=@"  "最後にyank or 削除した内容をクリップボードに入れる
+command Pbcopy0 :let @*=@0 "最後にyankした内容をクリップボードに入れる
+
+
+"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+ 
+let g:user_emmet_leader_key='<C-W>'

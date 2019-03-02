@@ -1,0 +1,38 @@
+{
+	"analytics-uuid": "64655682-6053-41b0-89ec-9b2bbd1832fb",
+	"motd": {
+		"minVersion": "3.0.5"
+	},
+	"motd.fetched": 1546484205391,
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "111641400217691064546",
+		"email": "ktx.ku.pub@gmail.com",
+		"email_verified": true,
+		"at_hash": "vLf1gX4keCYiwTBOaMPd1A",
+		"iat": 1546339022,
+		"exp": 1546342622
+	},
+	"tokens": {
+		"expires_at": 1546493218864,
+		"refresh_token": "1/-U010eTgEu2u2zDGKucvrVEvldlfkago9J6mVTZoXSU",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.GlyGBmyMTJa1u7YfGkMlncbX9huP-eICrI5FOltwy6hNydogMziofk1rHr5Zu0TBNAKNKdYH7-Sb9m3f4DMoYvYstp5LVuB_8L4_gu6_i9BcX3B4k_d6t8o6ygF4CQ",
+		"expires_in": 3600,
+		"scope": "https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc5NzhhOTEzNDcyNjFhMjkxYmQ3MWRjYWI0YTQ2NGJlN2QyNzk2NjYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTExNjQxNDAwMjE3NjkxMDY0NTQ2IiwiZW1haWwiOiJrdHgua3UucHViQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoib3ZqaWZpalc0WVB1RXV0QmxzdnV4dyIsImlhdCI6MTU0NjQ4OTYxOCwiZXhwIjoxNTQ2NDkzMjE4fQ.YWngoKeUQLcnQ1kD_XJYbLDW0PndQGnTkwhIpiG1rP040k4gNTXJxzdxbTPu9LQQzDMW5UdlpROBFIIVruMWAhPPen6xdujVG1Xb6nOpoEBwA4w5oHijsRFWZO_OSd8WMcPgHE0MShv2A6irAqn9wAinJ3jqoccyE-aAnRkXc70Ffy6cOViQpXG0voiFqlB9fo1KVnRRGNoa2sqM2ejwDE2coCtIhI9OHV1mrm54Ujtqi0KyhflmzAAmBS2bgmpYdy_ViQWg8TxOaoHEk95VcZTTx9OAE1I6BSqItIu9XxZCaOr7EzpXaj6Bzt76R7HGfYgDN1XIYL2tccA-opAYGw"
+	},
+	"activeProjects": {
+		"/Users/kota/cloud_functions": "botchan-10a94"
+	}
+}

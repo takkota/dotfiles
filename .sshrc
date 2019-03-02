@@ -1,0 +1,14 @@
+tmuxrc() {
+  local TMUXDIR=/tmp/.takahashi-tmux
+  if ! [ -d $TMUXDIR ]; then
+    rm -rf $TMUXDIR
+    mkdir -p $TMUXDIR
+  fi
+  rm -rf $TMUXDIR/.sshrc.d
+  cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $TMUXDIR
+  SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc `which tmux` -f $SSHHOME/.sshrc.d/.tmux.conf -S $TMUXDIR/tmuxserver $@
+}
+
+# nvim or python3 enbaledのvim8があれば有効にする
+# export VIMINIT="let \$MYVIMRC='$SSHHOME/.sshrc.d/.vimrc' | source \$MYVIMRC"
+export SHELL=`which bash`

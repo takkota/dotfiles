@@ -12,3 +12,6 @@ sh ./installer.sh ~/.cache/dein
 
 # ansibleインストール
 brew install ansible
+
+# fishermanインストール (fisherfileでやるから不要)
+# curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish

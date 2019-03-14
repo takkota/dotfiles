@@ -12,10 +12,15 @@
       - google-chrome
       - google-japanese-ime
       - iterm2
+      - java
+      - inkdrop
+      - 1password
+      - intellij-idea
     brew_packages:
       - neovim
       - rbenv
       - pyenv
+      - jenv
       - nodebrew
       - awscli
       - bash-completion
@@ -24,6 +29,7 @@
       - docker-compose
       - git
       - jq
+      - httpie
       - openssl
       - tig
       - tree
@@ -31,7 +37,7 @@
       - ssh
       - sshrc
       - tmux
- 
+
   tasks:
     # https://docs.ansible.com/ansible/2.7/modules/homebrew_tap_module.html
     - name: Homebrew tap
@@ -39,7 +45,7 @@
         name: "{{ item }}"
         state: "present"
       with_items: "{{ brew_taps }}"
- 
+
     # https://docs.ansible.com/ansible/2.7/modules/homebrew_cask_module.html
     - name: Install Homebrew Cask Packages
       homebrew_cask:
@@ -48,13 +54,29 @@
         install_options: "appdir=/Applications"
         accept_external_apps: yes
       with_items: "{{ brew_cask_apps }}"
- 
+
     # https://docs.ansible.com/ansible/2.7/modules/homebrew_module.html
     - name: Update Homebrew
       homebrew:
         update_homebrew: yes
- 
+
     - name: Install Homebrew Packages
       homebrew:
-        name: "{{ brew_packages }}"
+        name: "{{ item }}"
         state: "present"
+      with_items: "{{ brew_packages }}"
+
+    - name: Install Python3
+      shell: bash -lc "pyenv install 3.5.2"
+
+    - name: Install Python
+      shell: bash -lc "pyenv install 2.7.12"
+
+    - name: Set Python Global
+      shell: bash -lc "pyenv global 3.5.2"
+
+    - name: Install Ruby
+      shell: bash -lc "rbenv install 2.5.0"
+
+    - name: Set Ruby Global
+      shell: bash -lc "rbenv global 2.5.0"

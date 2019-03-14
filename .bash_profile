@@ -26,9 +26,15 @@ export PATH=$PATH:$HOME/.nodebrew/current/bin
 
 export PATH=$HOME/flutter/bin:$PATH
 
-export PATH=$PATH:/Users/kota/Library/Android/sdk/platform-tools
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+
+if which jenv > /dev/null; then
+  # JENV_ROOTがemptyの場合、'${HOME}/.jenv'がrootと設定される
+  export JENV_ROOT=/usr/local/var/jenv
+  eval "$(jenv init -)"
+fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/kota/.sdkman"
-[[ -s "/Users/kota/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kota/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 exec fish

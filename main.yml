@@ -19,6 +19,7 @@
     brew_packages:
       - neovim
       - rbenv
+      - ruby-build
       - pyenv
       - jenv
       - nodebrew

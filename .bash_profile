@@ -16,17 +16,23 @@ export PATH="$ASEPRITE:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+# ruby
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# python
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
+# node
 export PATH=$PATH:$HOME/.nodebrew/current/bin
 
+# flutter
 export PATH=$HOME/flutter/bin:$PATH
 
+# Android
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 
 if which jenv > /dev/null; then

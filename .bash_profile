@@ -10,6 +10,7 @@ if [ -f ~/.bashrc ]; then
   fi
 alias vim='nvim'
 
+export PATH=/usr/local/bin:$PATH
 export ASEPRITE="$HOME/Library/Application Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS"
 export PATH="$ASEPRITE:$PATH"
 

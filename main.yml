@@ -29,12 +29,12 @@
       - docker-compose
       - git
       - jq
+      - ag
       - httpie
       - openssl
       - tig
       - tree
       - curl
-      - ssh
       - sshrc
       - tmux
 
@@ -62,21 +62,23 @@
 
     - name: Install Homebrew Packages
       homebrew:
-        name: "{{ item }}"
+        name: "{{ brew_packages }}"
         state: "present"
-      with_items: "{{ brew_packages }}"
 
     - name: Install Python3
-      shell: bash -lc "pyenv install 3.5.2"
+      shell: pyenv install 3.5.2
 
     - name: Install Python
-      shell: bash -lc "pyenv install 2.7.12"
+      shell: pyenv install 2.7.12
 
     - name: Set Python Global
-      shell: bash -lc "pyenv global 3.5.2"
+      shell: pyenv global 3.5.2
+
+    - name: prepare neovim
+      shell: pip uninstall neovim pynvim && pip install pynvim && pip install neovim
 
     - name: Install Ruby
-      shell: bash -lc "rbenv install 2.5.0"
+      shell: rbenv install 2.5.0
 
     - name: Set Ruby Global
-      shell: bash -lc "rbenv global 2.5.0"
+      shell: rbenv global 2.5.0

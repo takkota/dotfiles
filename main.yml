@@ -80,10 +80,6 @@
       shell: pyenv global 3.5.2
       ignore_errors: yes
 
-    - name: prepare neovim
-      shell: pip3 uninstall neovim pynvim && pip3 install pynvim && pip3 install neovim
-      ignore_errors: yes
-
     - name: Install Ruby
       shell: rbenv install 2.5.0
       ignore_errors: yes

@@ -7,7 +7,7 @@
 
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
-  fi
+fi
 alias vim='nvim'
 
 export PATH=/usr/local/bin:$PATH

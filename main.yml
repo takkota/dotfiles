@@ -81,7 +81,7 @@
       ignore_errors: yes
 
     - name: prepare neovim
-      shell: pip uninstall neovim pynvim && pip install pynvim && pip install neovim
+      shell: pip3 uninstall neovim pynvim && pip3 install pynvim && pip3 install neovim
       ignore_errors: yes
 
     - name: Install Ruby

@@ -5,6 +5,7 @@
     brew_taps:
       - homebrew/core
       - caskroom/cask
+      - caskroom/cask-versions
     brew_cask_apps:
       - alfred
       - docker
@@ -32,7 +33,14 @@
       - git
       - jq
       - ag
+      - node
+      - mcrypt
+      - mysql
+      - httpd
       - httpie
+      - yarn
+      - ngrok
+      - awscli
       - openssl
       - tig
       - tree

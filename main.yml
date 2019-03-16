@@ -16,6 +16,7 @@
       - inkdrop
       - 1password
       - intellij-idea
+      - dropbox
     brew_packages:
       - neovim
       - rbenv

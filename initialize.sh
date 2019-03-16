@@ -15,6 +15,7 @@ brew install ansible
 
 # fishermanインストール (fisherfileでやるから不要)
 # curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+# fish用font
 sh fonts/install.sh
 
 # dotfileが見えるように

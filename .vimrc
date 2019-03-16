@@ -310,9 +310,9 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 let g:user_emmet_leader_key='<C-W>'
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap <Enter> <Plug>(EasyAlign)
+xmap ea <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap <Enter> <Plug>(EasyAlign)
+nmap ea <Plug>(EasyAlign)
 
 " Denite
 call denite#custom#var('file_rec', 'command', ['ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', ''])

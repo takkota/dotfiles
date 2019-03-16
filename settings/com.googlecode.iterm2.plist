@@ -58,9 +58,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1334 163 543 329 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>765 571 796 486 0 0 1920 1080 </string>
+	<string>765 634 918 423 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 420 890 602 0 0 1920 1080 </string>
+	<string>0 420 890 602 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>247 80 1145 802 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -610,7 +610,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodeProForPowerline-Regular 18</string>
+			<string>SourceCodeProForPowerline-Regular 24</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>

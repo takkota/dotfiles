@@ -21,3 +21,8 @@ sh fonts/install.sh
 # dotfileが見えるように
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
+
+# screenshotsの場所変更
+cd ~ && mkdir screenshots
+defaults write com.apple.screencapture location ~/screenshots/
+killall SystemUIServer

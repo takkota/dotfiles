@@ -26,13 +26,13 @@ export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
 # node
-export PATH=$PATH:$HOME/.nodebrew/current/bin
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # flutter
 export PATH=$HOME/flutter/bin:$PATH
 
 # Android
-export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
 if which jenv > /dev/null; then
   # JENV_ROOTがemptyの場合、'${HOME}/.jenv'がrootと設定される

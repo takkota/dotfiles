@@ -39,6 +39,12 @@ noremap x "_x
 nnoremap dw "_dw
 nnoremap D "_D
 
+" insertモードでの移動
+imap <C-p> <Up>
+imap <C-n> <Down>
+imap <C-b> <Left>
+imap <C-f> <Right>
+
 if has('python3') && !has('patch-8.1.201')
   silent! python3 1
 endif

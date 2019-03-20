@@ -18,6 +18,7 @@
       - 1password
       - intellij-idea
       - dropbox
+      - hyperswitch
     brew_packages:
       - neovim
       - rbenv
@@ -26,6 +27,7 @@
       - jenv
       - nodebrew
       - awscli
+      - amazon-ecs-cli
       - bash-completion
       - fish
       - docker
